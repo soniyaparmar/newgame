@@ -1,0 +1,13 @@
+.pressed{
+    border: 5px solid rgb(13, 7, 129);
+    box-shadow: 5px 3px;
+    background-color: rgb(218, 218, 255);
+    color: white;
+}
+.pressed,body{
+    background: white;
+}
+
+.game-over{
+    background-color: red;
+}

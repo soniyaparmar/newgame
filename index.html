@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            margin: 5%;
+        }
+
+
+        .button {
+            height: 100px;
+            width: 100px;
+            /* background-color: #ff1f50; */
+            /* Green */
+            /* border: 5px solid rgb(217, 217, 217);
+            color: rgb(36, 35, 35);
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 3px 2px rgb(255, 87, 87);
+            border-radius: 8px; */
+            box-shadow: 3px 2px;
+        }
+
+        .pressed {
+            background-color: rgb(205, 15, 132);
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+
+        @media (min-width: 768px) {
+            .res {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body class="" id="bg">
+    <h1 class="text-light text-center" id="level-title">Catch me if you can</h1><br><br><br>
+    <div class="container-fluid">
+        <div class="row gap-2">
+            <div class="col">
+                <button class="button btn btn-outline-danger button pt-sm-3  ab" id="red">A</button>
+            </div>
+            <div class="col">
+                <button class="button btn btn-outline-success pt-sm-3 bc" id="green">B</button>
+            </div>
+            <div class="col">
+                <button class="button btn btn-outline-warning pt-sm-3   cd" id="blue">C</button>
+            </div>
+            <div class="col">
+                <button class="button btn btn-outline-primary  pt-sm-3   abc" id="pink">D</button>
+            </div>
+            <div class="col res">
+                <button class="button btn btn-outline-info pt-sm-3   acd " id="yellow">E</button>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center mt-5">
+                <button class="w-25 ">Click</button>
+            </div>
+        </div>
+    </div>
+
+
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+   
+</body>
+
+</html>
