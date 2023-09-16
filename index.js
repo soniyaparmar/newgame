@@ -1,37 +1,3 @@
-$(".ab").hover(function(){
-    $(".ab").animate({
-        width:"150px",
-        height:"150px"});
-});
-
-$(".bc").hover(function(){
-    $(".bc").animate({
-        width:"150px",
-        height:"150px"});
-});
-
-
-$(".cd").hover(function(){
-    $(".cd").animate({
-        width:"150px",
-        height:"150px"});
-});
-
-$(".abc").hover(function(){
-    $(".abc").animate({
-        width:"150px",
-        height:"150px"});
-});
-
-$(".acd").hover(function(){
-    $(".acd").animate({
-        width:"150px",
-        height:"150px"});
-});
-
-
-
-
 var buttonColours = ["red", "blue", "green", "yellow","pink"];
 
 var gamePattern = [];
@@ -108,7 +74,7 @@ function nextSequence() {
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
 
-  $("#" + randomChosenColour).fadeIn(1000).fadeOut(1000).fadeIn(1000);
+  $("#" + randomChosenColour).fadeIn(2000).fadeOut(2000).fadeIn(2000);
   playSound(randomChosenColour);
 }
 
@@ -127,7 +93,7 @@ function animatePress(currentColor) {
 function restart(){ var gamePattern = [];
 var started = false;
 var level = 0;
-$("#level-title").text("You can restart the game");
+$("#level-title").text("You Can Restart The Game");
 }
 
 
